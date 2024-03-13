@@ -1,5 +1,5 @@
 {% set name = "hyperdiv" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hyperdiv-{{ version }}.tar.gz
-  sha256: a1050b2392b99e288d11501c458ebf82b1e0d28580c0d64e24f53b92bd23a7a8
+  sha256: f0a8f9f8b1685025e567488854df28e6c3f392537c1954da201a185d4faea332
 
 build:
   entry_points:
