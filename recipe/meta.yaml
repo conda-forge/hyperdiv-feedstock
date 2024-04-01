@@ -1,5 +1,5 @@
 {% set name = "hyperdiv" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hyperdiv-{{ version }}.tar.gz
-  sha256: eabff68347eaa15d939da5a40374194342553d66d16c162ae852e5f1a3a46d28
+  sha256: b779f7d2c2dacf0feff02856c41489e2584599719d996b1e913b23f51bb9709e
 
 build:
   entry_points:
@@ -34,7 +34,6 @@ requirements:
     - frozendict >=2.3.10,<3.0.0
     - parse >=1.20.0,<2.0.0
     - pygments >=2.17.2,<3.0.0
-    - black >=22.6.0,<23.0.0
 
 test:
   imports:
