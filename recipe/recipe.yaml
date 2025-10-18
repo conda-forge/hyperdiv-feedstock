@@ -23,7 +23,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - poetry-core >=1.0.0
+    # Upstream does not have upper pin but it doesn't work otherwise
+    - poetry-core >=1.0.0,<2.0.0
     - pip
   run:
     - python >=${{ python_min }},<4.0
